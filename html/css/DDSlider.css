@@ -1,0 +1,64 @@
+
+
+
+	/*------------------------
+	---------------- CONTENT
+	------------------------*/
+	
+	/* You might want to change these options for the main container */
+	#slider, #slider li {
+		
+		display: block;
+		height: 100%;
+		width: 100%;
+		z-index: 70;
+		
+	}
+	
+	/* images container - This is the most important container - Don't change important properties */
+	#slider {
+		
+		display: block;
+		list-style: none !important;
+		float: left;
+		margin: 0 !important;
+		padding: 0 !important;
+		overflow: hidden !important;
+		position: relative !important;
+		
+	}
+
+		/* each slider item - Nothing to change here */
+		#slider li {
+			
+			display: none;
+			float: left;
+			margin: 0;
+			position: absolute;
+			width: 100%;
+			
+		}
+		
+		/* Don't edit this part */
+		#slider li.current {
+			
+			display: block;
+			z-index: 10 !important;
+			
+		}
+		
+		/* Don't edit this part */
+		#slider li.next {
+			
+			display: block;
+			z-index: 9 !important;
+			
+		}
+		
+		/* Don't edit this part - prevents inline lists from being hidden */
+		#slider li ul li {
+			
+			display: block !important;
+			position: relative !important;
+			
+		}
